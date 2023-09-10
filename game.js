@@ -1,4 +1,4 @@
-let tog = 1
+let tog = 1 
 let rollingSound = new Audio('rpg-dice-rolling-95182.mp3')
 let winSound = new Audio('winharpsichord-39642.mp3')
 
@@ -201,7 +201,7 @@ function play(player, psum, correction, num) {
 
 document.getElementById("diceBtn").addEventListener("click", function () {
     rollingSound.play()
-    num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
+    num = Math.floor(Math.random() * (6) + 1)
     document.getElementById("dice").innerText = num
 
 
